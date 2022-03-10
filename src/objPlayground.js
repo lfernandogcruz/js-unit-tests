@@ -43,14 +43,6 @@ const calculator = (number1, number2) => {
   return objCalc;
 };
 
-const arrayGenerator = (typeInput, objectInput) => {
-    if (typeInput === 'keys') {
-      return Object.keys(objectInput);
-    } if (typeInput === 'values') {
-      return Object.values(objectInput);
-    } if (typeInput === 'entries') {
-      return Object.entries(objectInput);
-    }
-};
+const arrayGenerator = (typeInput, objectInput) => Object[typeInput](objectInput);
 
 module.exports = { calculator, arrayGenerator };

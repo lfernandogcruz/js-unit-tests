@@ -31,6 +31,4 @@ const circle = (radius) => {
   };
 };
 
-console.log(Object.entries(circle(3)));
-
 module.exports = circle;
